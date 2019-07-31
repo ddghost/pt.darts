@@ -13,7 +13,7 @@ from visualize import plot
 
 config = SearchConfig()
 
-device = torch.device("cuda")
+device = torch.device("cuda:3")
 
 # tensorboard
 writer = SummaryWriter(log_dir=os.path.join(config.path, "tb"))
